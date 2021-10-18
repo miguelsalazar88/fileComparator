@@ -20,6 +20,7 @@ public class Ventana extends JFrame {
     public Ventana(){
         this.setSize(900,500);
         this.getContentPane().setBackground(Color.lightGray);
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setLayout(null);
         this.setVisible(true);
         this.initComponents();
