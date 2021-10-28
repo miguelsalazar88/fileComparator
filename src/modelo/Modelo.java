@@ -38,8 +38,8 @@ public class Modelo {
     public String crearHash(String textToHash) throws NoSuchAlgorithmException {
         MessageDigest digest = MessageDigest.getInstance("SHA-256");
         byte[] byteOfTextToHash = textToHash.getBytes(StandardCharsets.UTF_8);
-        byte[] hashedByetArray = digest.digest(byteOfTextToHash);
-        String encoded = Base64.getEncoder().encodeToString(hashedByetArray);
+        byte[] hashedByteArray = digest.digest(byteOfTextToHash);
+        String encoded = Base64.getEncoder().encodeToString(hashedByteArray);
         return encoded;
     }
 
